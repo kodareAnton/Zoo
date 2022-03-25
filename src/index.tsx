@@ -15,7 +15,7 @@ ReactDOM.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<Layout />}>
-      <Route  path='/Animals' element={<Animals />}/>
+      <Route  path='/' element={<Animals />}/>
       <Route  path='/Animals/:id' element={<ShowAnimal />}/>
       <Route path='*' element={<NotFound />}/>
       </Route>
