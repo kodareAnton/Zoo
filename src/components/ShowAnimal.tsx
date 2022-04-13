@@ -41,9 +41,10 @@ export const ShowAnimal = () => {
         if(animal) {
             setAnimal({
                 ...animal,
-                isFed: true
+                isFed: true,
             })
         }
+        console.log(new Date());
         console.log(animal)
         // return !animal?.isFed;
     }
