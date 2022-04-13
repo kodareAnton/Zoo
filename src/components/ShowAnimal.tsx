@@ -35,10 +35,18 @@ export const ShowAnimal = () => {
     // mata djuret och få knappen disabled + skriv in tid
     let date = new Date
     function DateAndAnimalIsFed(){
-        console.log(date);
-        console.log(!animal?.isFed);
-        return !animal?.isFed;
+        // console.log(date);
+        // console.log(!animal?.isFed);
+        
+        if(animal) {
+            setAnimal({
+                ...animal,
+                isFed: true
+            })
         }
+        console.log(animal)
+        // return !animal?.isFed;
+    }
 
     return <> 
         <h2>{animal?.name}</h2>
